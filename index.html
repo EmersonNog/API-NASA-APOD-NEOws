@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="row">
+            <nav class="blue darken-1">
+                <div class="nav-wrapper">
+                    <div class="sol s12">
+                        <a href="#" class="brand-logo">Nasa Coding</a>
+                    </div>
+                </div>
+              </nav>
+        </header>
+        <main>
+            
+            <section>
+                <h1 class="center-align">Astronomy Picture of the day</h1>
+                <div class="row">
+                    <div class="col s12 m7">
+                    <div id="apod" class="card">
+                    </div>
+                    </div>
+                </div>
+            </section>
+    
+            <aside>
+                <h2>Asteroid Feed</h2>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" class="datepicker" id="start">
+                            <label for="start">Data</label>
+                        </div>
+                    </div>
+                </form>
+                <table id="afeedTable" class="striped hide">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Is Dangerous</th>
+                            <th>Magnitude</th>
+                            <th>Min</th>
+                            <th>Max</th>
+                            <th>Miss Distance</th>
+                            <th>Approach Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="afeed">
+                        
+                    </tbody>
+                </table>
+            </aside>
+    
+        </main>
+    </div>
+        <footer class="page-footer blue darken-1">
+            <div class="container">
+                <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Nasas Coding Challenge</h5>
+                    <p class="grey-text text-lighten-4">Make this in an hour or lesss ;) I failed</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Astronaut</h5>
+                    <ul>
+                        <li><a target="_blank" class="grey-text text-lighten-3" href="https://stackoverflow.com/users/3589092/kemicofa">kemicofa</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                © 2018 kemicofa
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
